@@ -47,8 +47,8 @@ let api: ChatGPTAPI | ChatGPTUnofficialProxyAPI
     }
 
     // using 16k
-    options.maxModelTokens = 16384
-    options.maxResponseTokens = 4096
+    options.maxModelTokens = 8192
+    options.maxResponseTokens = 2048
 
     if (isNotEmptyString(OPENAI_API_BASE_URL))
       options.apiBaseUrl = `${OPENAI_API_BASE_URL}/v1`
